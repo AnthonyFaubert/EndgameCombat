@@ -1,4 +1,43 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.101.153
+Date: Dec 23 2022
+  Bugfixes:
+    - Fixed turret ammo alert noises not being affected by Factorio's alert volume setting
+  Misc Changes:
+    - Changelog cleanup
+---------------------------------------------------------------------------------------------------
+Version: 1.101.152
+Date: Nov 15 2022
+  Bugfixes:
+    - Fixed modded labs not accepting alien tissue
+    - Fixed recipe code mistaking Krastorio for BobMods
+    - Fixed script error with robot-placed orbital strike orders
+  New Features:
+    - Added missing rocket control unit to neutron rocket ammo
+    - Added productivity support for sticky fluid, lye, biter cooking, and biter fuel
+    - Added productivity support to turret/dome lenses
+    - Added recipe to convert "Biter Power" mod eggs into alien tissue x6
+  Misc Changes:
+    - Automated turret logistic requests will now request far less ammo if it is crated
+    - Further code cleanup, fixing lightning turret splash damage again, turret logistic chests, and more
+    - Replaced transistors in lightning turret recipe with insulated cable
+---------------------------------------------------------------------------------------------------
+Version: 1.101.151
+Date: Nov 4 2022
+  Misc Changes:
+    - Hi-Ex cannon shells deal more damage
+    - Major code cleanup, and associated bugfixes, especially to shockwave range tech and lightning turret splash damage
+---------------------------------------------------------------------------------------------------
+Version: 1.101.150
+Date: Nov 4 2022
+  Bugfixes:
+    - Fixed T2 flamethrower not properly inheriting from the vanilla one
+    - Fixed guns on improved tank and helicopter
+  New Features:
+    - Added a larger equipment grid to helicopters
+  Removed Features:
+    - Removed lightning turret splash damage debug print
+---------------------------------------------------------------------------------------------------
 Version: 1.101.148
 Date: Oct 31 2022
   Bugfixes:
@@ -481,3 +520,8 @@ Date: Nov 21 2015
     - Added Plasma Turret
   Misc Changes:
     - Renamed to EndgameCombat
+---------------------------------------------------------------------------------------------------
+Version: 0.011.0
+Date: Jun 8 2015
+  Misc Changes:
+    - **Creation** (as "BetterTank")
