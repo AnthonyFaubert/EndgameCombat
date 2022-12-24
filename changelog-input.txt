@@ -1,419 +1,515 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.152.1
+Version: 1.101.152
 Date: Nov 15 2022
-	- Further code cleanup, fixing lightning turret splash damage again, turret logistic chests, and more
-	- Automated turret logistic requests will now request far less ammo if it is crated
-	- Added recipe to convert "Biter Power" mod eggs into alien tissue x6
-	- Added productivity support for sticky fluid, lye, biter cooking, and biter fuel
-	- Added productivity support to turret/dome lenses
-	- Added missing rocket control unit to neutron rocket ammo
-	- Fixed modded labs not accepting alien tissue
-	- Fixed script error with robot-placed orbital strike orders
-	- Fixed recipe code mistaking Krastorio for BobMods
-	- Replaced transistors in lightning turret recipe with insulated cable
+  Bugfixes:
+    - Fixed modded labs not accepting alien tissue
+    - Fixed recipe code mistaking Krastorio for BobMods
+    - Fixed script error with robot-placed orbital strike orders
+  New Features:
+    - Added missing rocket control unit to neutron rocket ammo
+    - Added productivity support for sticky fluid, lye, biter cooking, and biter fuel
+    - Added productivity support to turret/dome lenses
+    - Added recipe to convert "Biter Power" mod eggs into alien tissue x6
+  Misc Changes:
+    - Automated turret logistic requests will now request far less ammo if it is crated
+    - Further code cleanup, fixing lightning turret splash damage again, turret logistic chests, and more
+    - Replaced transistors in lightning turret recipe with insulated cable
 ---------------------------------------------------------------------------------------------------
-Version: 1.151.1
-Date: Nov 5 2022
-	- Major code cleanup, and associated bugfixes, especially to shockwave range tech and lightning turret splash damage
-	- Hi-Ex cannon shells deal more damage
----------------------------------------------------------------------------------------------------
-Version: 1.150.1
+Version: 1.101.151
 Date: Nov 4 2022
-	- Added a larger equipment grid to helicopters
-	- Fixed guns on improved tank and helicopter
-	- Fixed T2 flamethrower not properly inheriting from the vanilla one
-	- Removed lightning turret splash damage debug print
+  Misc Changes:
+    - Hi-Ex cannon shells deal more damage
+    - Major code cleanup, and associated bugfixes, especially to shockwave range tech and lightning turret splash damage
 ---------------------------------------------------------------------------------------------------
-Version: 1.148.1
+Version: 1.101.150
+Date: Nov 4 2022
+  Bugfixes:
+    - Fixed T2 flamethrower not properly inheriting from the vanilla one
+    - Fixed guns on improved tank and helicopter
+  New Features:
+    - Added a larger equipment grid to helicopters
+  Removed Features:
+    - Removed lightning turret splash damage debug print
+---------------------------------------------------------------------------------------------------
+Version: 1.101.148
 Date: Oct 31 2022
-	- Added options for controlling each possible turret alert
-	- Added options to disable sound of each tier of turret alert
-	- Added lightning turret splash damage and tech to boost its effect
-	- Moved acid capsule, turret, etc from vanilla "acid" damage type to new "caustic" type
-	- Added invulnerability to caustic damage to most defence or perimeter structures, to prevent acid turrets causing massive friendly-fire damage
-	- Removed acid invulnerability from walls
-	- Fixed locale of biter flesh
-	- Added recipe to resolidify lye back to hydroxide
-	- Changed focusing lens recipes to not be recursive, and fixed some intermod issues
-	- Added new focusing lenses for shield domes, to utilize the remaining colors of BobMods gems
-	- Added other BobMods items to some recipes
-	- Fixed shield dome circuit connection duplication
-	- Added new much-improved "rebooting" animation to shield domes
-	- Fixed recharging shield domes being low-power, often resulting in flicker
+  Bugfixes:
+    - Changed focusing lens recipes to not be recursive, and fixed some intermod issues
+    - Fixed locale of biter flesh
+    - Fixed recharging shield domes being low-power, often resulting in flicker
+    - Fixed shield dome circuit connection duplication
+  New Features:
+    - Added invulnerability to caustic damage to most defence or perimeter structures, to prevent acid turrets causing massive friendly-fire damage
+    - Added lightning turret splash damage and tech to boost its effect
+    - Added new focusing lenses for shield domes, to utilize the remaining colors of BobMods gems
+    - Added new much-improved "rebooting" animation to shield domes
+    - Added options for controlling each possible turret alert
+    - Added options to disable sound of each tier of turret alert
+    - Added other BobMods items to some recipes
+    - Added recipe to resolidify lye back to hydroxide
+  Misc Changes:
+    - Moved acid capsule, turret, etc from vanilla "acid" damage type to new "caustic" type
+  Removed Features:
+    - Removed acid invulnerability from walls
 ---------------------------------------------------------------------------------------------------
-Version: 1.144.1
+Version: 1.101.144
 Date: Oct 7 2022
-	- Added many fixes for prototypes with nulled values for things like energy sources or emissions thereof
-	- Fixed duplication of turret logistics chests
-	- Technology effects now have icons
-	- Added "focusing lenses" to laser, plasma, and lightning turrets, to integrate BobMods gems if present
-	- Fix crated ammo compatibility with some modded ammo items
-	- Added "lye" fluid, made from sodium hydroxide, if that item is present; usable as "acid" in acid capsule and turret
-	- Added BobMods lead to supercavitating ammo if present, but cheapen other ingredients
-	- Fixed potential issues with destroyer satellite functionality
-	- Injured biters now deal less damage, in a linear relationship
-	- Added BobMods blue circuits to lightning turrets if present
-	- Excluded more technical turrets from range boost system
-	- Fixed upgrade techs not applying to plasma turrets
-	- Made walls immune to acid to prevent destruction from acid turrets
-	- Fixed spam of technical "-rangeboost-" turrets from most GUIs
-	- Added conversion recipe from spiked wall to reinforced spiked wall
-	- Added conversion recipe from explosive to napalm rockets
-	- Cannon turrets now also prioritize NauvisDay wall nukers
+  Bugfixes:
+    - Fix crated ammo compatibility with some modded ammo items
+    - Fixed duplication of turret logistics chests
+    - Fixed potential issues with destroyer satellite functionality
+    - Fixed spam of technical "-rangeboost-" turrets from most GUIs
+    - Fixed upgrade techs not applying to plasma turrets
+  New Features:
+    - Added "focusing lenses" to laser, plasma, and lightning turrets, to integrate BobMods gems if present
+    - Added "lye" fluid, made from sodium hydroxide, if that item is present; usable as "acid" in acid capsule and turret
+    - Added BobMods blue circuits to lightning turrets if present
+    - Added BobMods lead to supercavitating ammo if present, but cheapen other ingredients
+    - Added conversion recipe from explosive to napalm rockets
+    - Added conversion recipe from spiked wall to reinforced spiked wall
+    - Added many fixes for prototypes with nulled values for things like energy sources or emissions thereof
+    - Technology effects now have icons
+  Misc Changes:
+    - Cannon turrets now also prioritize NauvisDay wall nukers
+    - Excluded more technical turrets from range boost system
+    - Injured biters now deal less damage, in a linear relationship
+    - Made walls immune to acid to prevent destruction from acid turrets
 ---------------------------------------------------------------------------------------------------
-Version: 1.105.1
+Version: 1.101.105
 Date: Apr 28 2021
-	- Update to 1.1
+  Misc Changes:
+    - Update to 1.1
 ---------------------------------------------------------------------------------------------------
-Version: 1.18.24
+Version: 1.018.24
 Date: Nov 15 2020
-	- Added option to require a unique orbital destroyer launch for each automated orbital destroyer unit on the ground
-	- Biters building new bases now automatically schedules new orbital strikes there, as well as an alert
+  New Features:
+    - Added option to require a unique orbital destroyer launch for each automated orbital destroyer unit on the ground
+  Misc Changes:
+    - Biters building new bases now automatically schedules new orbital strikes there, as well as an alert
 ---------------------------------------------------------------------------------------------------
-Version: 1.18.18
+Version: 1.018.18
 Date: Aug 10 2020
-	- Doubled effect of lightning turret recharge tech
-	- Further improved turret cache reliability
-	- Reimplemented capsule dump equipment
-	- Increased napalm shell AoE
-	- Added shield dome reboot FX
-	- Fixed artillery AoE damaging friendly structures
-	- Re-added train mass increase (with modern improvements) after witnessing a high-speed train stop dead in its tracks after hitting some biters (https://youtu.be/dDFYW5yVjMM)
-	- Changed some recipe and tech costs
-	- Lightning turrets now take massively increased damage from biters but reduced damage from spitters
-	- Fixed turret logi chest stacking due to repeated recreation
-	- Slightly increased artillery logi request
+  Bugfixes:
+    - Fixed artillery AoE damaging friendly structures
+    - Fixed turret logi chest stacking due to repeated recreation
+  New Features:
+    - Added shield dome reboot FX
+  Rebalancing:
+    - Increased napalm shell AoE
+  Misc Changes:
+    - Changed some recipe and tech costs
+    - Doubled effect of lightning turret recharge tech
+    - Further improved turret cache reliability
+    - Lightning turrets now take massively increased damage from biters but reduced damage from spitters
+    - Re-added train mass increase (with modern improvements) after witnessing a high-speed train stop dead in its tracks after hitting some biters (https://youtu.be/dDFYW5yVjMM)
+    - Reimplemented capsule dump equipment
+    - Slightly increased artillery logi request
 ---------------------------------------------------------------------------------------------------
-Version: 1.18.15
+Version: 1.018.15
 Date: Jul 28 2020
-	- Removed debug prints
-	- Fixed handling of capsule damage and mod compat
-	- Moved shield dome circuit connection relative to dome
-	- Shield domes now have new modern graphics
-	- Fixed some missing locale from 0.17 update
-	- Redesigned plasma laser defence equipment, which had been unchanged since 2015
-	- Removed 2015-era train mass increases
-	- Changed uranium costs in some recipes
-	- Added setting to add major AoE damage to artillery shell impact
-	- Fixed turret logi chests sometimes surviving the removal of the parent entity or being placed wrong
-	- Strongly reduced artillery logi request
+  Bugfixes:
+    - Fixed handling of capsule damage and mod compat
+    - Fixed some missing locale from 0.17 update
+    - Fixed turret logi chests sometimes surviving the removal of the parent entity or being placed wrong
+  New Features:
+    - Added setting to add major AoE damage to artillery shell impact
+    - Shield domes now have new modern graphics
+  Misc Changes:
+    - Changed uranium costs in some recipes
+    - Moved shield dome circuit connection relative to dome
+    - Redesigned plasma laser defence equipment, which had been unchanged since 2015
+    - Strongly reduced artillery logi request
+  Removed Features:
+    - Removed 2015-era train mass increases
+    - Removed debug prints
 ---------------------------------------------------------------------------------------------------
-Version: 1.18.12
+Version: 1.018.12
 Date: Jul 5 2020
-	- Added support for the native upgrading system on improved turrets and walls
-	- Fixed some sprite issues
+  Bugfixes:
+    - Fixed some sprite issues
+  New Features:
+    - Added support for the native upgrading system on improved turrets and walls
 ---------------------------------------------------------------------------------------------------
-Version: 1.18.10
+Version: 1.018.10
 Date: Jun 29 2020
-	- Improved code performance
-	- Tweaked turret targeting based on biter health to better allocate turrets in mixed type attack waves
-	- Added option to buff green worms similar to the old one to buff green biters
-	- Plasma turrets now have aiming and shutdown sounds
-	- Made later game range techs more gated
-	- Reduced some tech costs in raw pack count
-	- Changed some ammo recipes to better reflect a cheap/expensive recipes split
-	- T2 flamethrower and napalm shells now do a unique kind of damage, bypassing normal fire resistances unless that resistance is 100%
-	- Rebalanced supercavitating ammo damage profile
+  New Features:
+    - Added option to buff green worms similar to the old one to buff green biters
+    - Plasma turrets now have aiming and shutdown sounds
+  Rebalancing:
+    - Rebalanced supercavitating ammo damage profile
+    - Reduced some tech costs in raw pack count
+  Misc Changes:
+    - Changed some ammo recipes to better reflect a cheap/expensive recipes split
+    - Improved code performance
+    - Made later game range techs more gated
+    - T2 flamethrower and napalm shells now do a unique kind of damage, bypassing normal fire resistances unless that resistance is 100%
+    - Tweaked turret targeting based on biter health to better allocate turrets in mixed type attack waves
 ---------------------------------------------------------------------------------------------------
-Version: 1.18.6
+Version: 1.018.6
 Date: Jun 15 2020
-	- Improved shockwave turret range boost tech
-	- Improved code performance
+  Misc Changes:
+    - Improved code performance
+    - Improved shockwave turret range boost tech
 ---------------------------------------------------------------------------------------------------
-Version: 1.18.5
+Version: 1.018.5
 Date: Jun 11 2020
-	- Plasma turrets now have new unique graphics
-	- Made concussion turret graphics more unique but more similar to modern gun turret style
+  New Features:
+    - Plasma turrets now have new unique graphics
+  Misc Changes:
+    - Made concussion turret graphics more unique but more similar to modern gun turret style
 ---------------------------------------------------------------------------------------------------
-Version: 1.18.2
+Version: 1.018.2
 Date: Jun 7 2020
-	- Added option for shockwave turrets to use red circuits (and thus be oil-dependent)
-	- More code cleanup
-	- Halved turret alert volume
+  New Features:
+    - Added option for shockwave turrets to use red circuits (and thus be oil-dependent)
+  Misc Changes:
+    - Halved turret alert volume
+    - More code cleanup
 ---------------------------------------------------------------------------------------------------
-Version: 1.18.1
+Version: 1.018.1
 Date: May 29 2020
-	- Update to 0.18
-	- Fixed fire capsule/spraying issues
-	- Massively cleaned up code
+  Bugfixes:
+    - Fixed fire capsule/spraying issues
+  Misc Changes:
+    - Massively cleaned up code
+    - Update to 0.18
 ---------------------------------------------------------------------------------------------------
-Version: 1.17.35
+Version: 1.017.35
 Date: Dec 29 2019
-	- Fixed occasional crash on load due to typo
-	- Added more mods' technical entities to the turret range blacklist
-	- Fixed last_user attemping to set nil when that was the fetched value, pending vanilla bugfix to allow nil as set value (https://forums.factorio.com/viewtopic.php?f=11&t=76360)
+  Bugfixes:
+    - Fixed last_user attemping to set nil when that was the fetched value, pending vanilla bugfix to allow nil as set value (https://forums.factorio.com/viewtopic.php?f=11&t=76360)
+    - Fixed occasional crash on load due to typo
+  New Features:
+    - Added more mods' technical entities to the turret range blacklist
 ---------------------------------------------------------------------------------------------------
-Version: 1.17.24
+Version: 1.017.24
 Date: Sep 30 2019
-	- Neutron weaponry now leaves long-lived fallout
-	- Power armor mk3 is now unbreakable
-	- Improved mod compatibility
-	- Fixed turret caching losing "last_user"
+  Bugfixes:
+    - Fixed turret caching losing "last_user"
+  Misc Changes:
+    - Improved mod compatibility
+    - Neutron weaponry now leaves long-lived fallout
+    - Power armor mk3 is now unbreakable
 ---------------------------------------------------------------------------------------------------
-Version: 1.17.15
+Version: 1.017.15
 Date: Jul 1 2019
-	- Added more mods' technical entities to the turret range blacklist
-	- More 0.17 fixes
-	- Redesigned plasma beam sprite to be more unique and more dramatic
-	- Fixed issues with locking things behind campaign only techs
+  Bugfixes:
+    - Fixed issues with locking things behind campaign only techs
+  New Features:
+    - Added more mods' technical entities to the turret range blacklist
+  Misc Changes:
+    - More 0.17 fixes
+    - Redesigned plasma beam sprite to be more unique and more dramatic
 ---------------------------------------------------------------------------------------------------
-Version: 1.17.12
+Version: 1.017.12
 Date: Jun 17 2019
-	- More 0.17 fixes
-	- Added some more fixes to dome scripting
-	- Added more radiation resistances
+  New Features:
+    - Added more radiation resistances
+    - Added some more fixes to dome scripting
+  Misc Changes:
+    - More 0.17 fixes
 ---------------------------------------------------------------------------------------------------
-Version: 1.17.6
+Version: 1.017.6
 Date: Jun 6 2019
-	- Update to 0.17
-	- Moved shared code to Dragon Industries
-	- Added tech to improve shield dome reboot time
-	- Fixed some sprite issues on equipment
+  Bugfixes:
+    - Fixed some sprite issues on equipment
+  New Features:
+    - Added tech to improve shield dome reboot time
+  Misc Changes:
+    - Moved shared code to Dragon Industries
+    - Update to 0.17
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.180
+Version: 1.016.180
 Date: Nov 28 2018
-	- Tweaked napalm shell fire area
-	- Added shield dome capacity circuit signal
-	- Added option to disable napalm shells from lighting trees
-	- Added T2 flamethrower to Helicopter mod
-	- Fixed yet more rangeboost turret issues
-	- Rebalanced some recipes
+  Bugfixes:
+    - Fixed yet more rangeboost turret issues
+  New Features:
+    - Added T2 flamethrower to Helicopter mod
+    - Added option to disable napalm shells from lighting trees
+    - Added shield dome capacity circuit signal
+  Rebalancing:
+    - Rebalanced some recipes
+  Misc Changes:
+    - Tweaked napalm shell fire area
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.172
+Version: 1.016.172
 Date: Oct 20 2018
-	- Fixed crash on load with some users
+  Bugfixes:
+    - Fixed crash on load with some users
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.164
+Version: 1.016.164
 Date: Oct 15 2018
-	- Rebalanced T2 flamethrower
-	- Napalm rocket tech is no longer much more expensive than napalm shells
-	- Tweaked plasma turret tech prereqs
-	- Added option to make napalm not set trees on fire
+  New Features:
+    - Added option to make napalm not set trees on fire
+  Rebalancing:
+    - Rebalanced T2 flamethrower
+  Misc Changes:
+    - Napalm rocket tech is no longer much more expensive than napalm shells
+    - Tweaked plasma turret tech prereqs
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.160
+Version: 1.016.160
 Date: Oct 10 2018
-	- Rebalanced capsules
-	- BobMods version of the Power Armor 3 recipe changed somewhat
+  Rebalancing:
+    - Rebalanced capsules
+  Misc Changes:
+    - BobMods version of the Power Armor 3 recipe changed somewhat
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.148
+Version: 1.016.148
 Date: Sep 18 2018
-	- Added sticky turrets
-	- Health alerts should now take priority
-	- Fixed crash with Bob Warfare
+  Bugfixes:
+    - Fixed crash with Bob Warfare
+  New Features:
+    - Added sticky turrets
+  Misc Changes:
+    - Health alerts should now take priority
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.144
+Version: 1.016.144
 Date: Sep 10 2018
-	- Added Supercavitating ammo type
-	- Electric turrets no longer play low/critical alerts unless they have a zero idle drain, as non-drainless turrets would deplete entirely if power is lost
-	- Tweaked a few tech costs
-	- Made laser turret damage tech more uniform
+  New Features:
+    - Added Supercavitating ammo type
+  Misc Changes:
+    - Electric turrets no longer play low/critical alerts unless they have a zero idle drain, as non-drainless turrets would deplete entirely if power is lost
+    - Made laser turret damage tech more uniform
+    - Tweaked a few tech costs
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.138
+Version: 1.016.138
 Date: Sep 7 2018
-	- High-tier ammo now has some piercing damage
-	- Ammo crate properly inherits damage from parent type
-	- Fluid wagons no longer pop like balloons when bumped into
-	- Shockwave turret rangeboost effectivity increased
-	- Spitters will no longer stop just outside the range of a shockwave turret
-	- Cheapened electric defence technologies
-	- Turret range boost tech is now cheaper
+  Misc Changes:
+    - Ammo crate properly inherits damage from parent type
+    - Cheapened electric defence technologies
+    - Fluid wagons no longer pop like balloons when bumped into
+    - High-tier ammo now has some piercing damage
+    - Shockwave turret rangeboost effectivity increased
+    - Spitters will no longer stop just outside the range of a shockwave turret
+    - Turret range boost tech is now cheaper
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.135
+Version: 1.016.135
 Date: Sep 5 2018
-	- Shockwave turret damage technology now shows the effect in the tech screen
-	- Moved shockwave turret earlier in the techtree, and replaced aluminum (if applicable) with nickel
-	- Cannon turret now uses cobalt instead of invar
-	- Acid turret now uses aluminum instead of cobalt
-	- Fixed spurious turret alarms
-	- Fixed some missing localizations	
-	- Added "weaponized electrical discharge" tech as a prereq for some defence technologies
-	- Turret logi chests no longer show "no network" icons
-	- Hid range-boost turrets from the bonus gui
+  Bugfixes:
+    - Fixed some missing localizations
+    - Fixed spurious turret alarms
+  New Features:
+    - Added "weaponized electrical discharge" tech as a prereq for some defence technologies
+  Misc Changes:
+    - Acid turret now uses aluminum instead of cobalt
+    - Cannon turret now uses cobalt instead of invar
+    - Hid range-boost turrets from the bonus gui
+    - Moved shockwave turret earlier in the techtree, and replaced aluminum (if applicable) with nickel
+    - Shockwave turret damage technology now shows the effect in the tech screen
+    - Turret logi chests no longer show "no network" icons
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.132
+Version: 1.016.132
 Date: Sep 2 2018
-	- Rebalanced technology dependencies and recipes, with a focus on BobMods integration
-	- Added command to silence the sounds from turret alerts for a user-specified length of time
-	- T2 Flamethrower now requires Advanced Electronics 2
-	- Added option for more intelligent "low ammo" warnings, based on dealable damage and its relation to average enemy health at that evolution factor
-	- Reduced concussion turret damage from 5x to 2x
-	- Made concussion turrets available much earlier
-	- Split incendiary ammo tech into pre and post uranium
-	- Brought incendiary uranium ammo more in line with vanilla ammo DPS
+  New Features:
+    - Added command to silence the sounds from turret alerts for a user-specified length of time
+    - Added option for more intelligent "low ammo" warnings, based on dealable damage and its relation to average enemy health at that evolution factor
+  Rebalancing:
+    - Rebalanced technology dependencies and recipes, with a focus on BobMods integration
+    - Reduced concussion turret damage from 5x to 2x
+  Misc Changes:
+    - Brought incendiary uranium ammo more in line with vanilla ammo DPS
+    - Made concussion turrets available much earlier
+    - Split incendiary ammo tech into pre and post uranium
+    - T2 Flamethrower now requires Advanced Electronics 2
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.120
+Version: 1.016.120
 Date: Aug 20 2018
-	- Redesigned robot and electric pole defence techs, they now have proper tiered and tech-level-dependent behavior
-	- Trains and cliffs are now properly radiation-immune
-	- Reduced reinforced-only wall strength from 4000 to 2000, and made it cheaper
-	- Improved orbital strike performance
+  New Features:
+    - Redesigned robot and electric pole defence techs, they now have proper tiered and tech-level-dependent behavior
+  Rebalancing:
+    - Reduced reinforced-only wall strength from 4000 to 2000, and made it cheaper
+  Misc Changes:
+    - Improved orbital strike performance
+    - Trains and cliffs are now properly radiation-immune
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.115
+Version: 1.016.115
 Date: Aug 15 2018
-	- Fixed crash with level 5 of lightning turret charging researched
-	- Fixed crash with fluid turrets with no fluidboxes breaking alert tracking
+  Bugfixes:
+    - Fixed crash with fluid turrets with no fluidboxes breaking alert tracking
+    - Fixed crash with level 5 of lightning turret charging researched
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.112
+Version: 1.016.112
 Date: Aug 13 2018
-	- Added option to massively buff green biters' health to make the lightning turret more desirable
-	- Increased lightning turret damage 50%
-	- Fixed resistance handling for "resist all"
-	- Added turret monitoring alerts and tech
-	- Added more checks to turret caching to fix more errors
+  Bugfixes:
+    - Fixed resistance handling for "resist all"
+  New Features:
+    - Added more checks to turret caching to fix more errors
+    - Added option to massively buff green biters' health to make the lightning turret more desirable
+    - Added turret monitoring alerts and tech
+  Rebalancing:
+    - Increased lightning turret damage 50%
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.106
+Version: 1.016.106
 Date: Aug 7 2018
-	- Added lightning turret
-	- Improved performance in active scripting
+  New Features:
+    - Added lightning turret
+  Misc Changes:
+    - Improved performance in active scripting
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.101
+Version: 1.016.101
 Date: Aug 2 2018
-	- Added handling for artillery turret
-	- Fixed technical entities being blueprintable or deconstructable
+  Bugfixes:
+    - Fixed technical entities being blueprintable or deconstructable
+  New Features:
+    - Added handling for artillery turret
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.98
+Version: 1.016.98
 Date: Jul 30 2018
-	- Fixed some errors with launching custom items
-	- Fixed plasma beam coloring
-	- Replaced concrete with refined concrete in a couple recipes
-	- Removed random chunk turret recaching to improve performance
+  Bugfixes:
+    - Fixed plasma beam coloring
+    - Fixed some errors with launching custom items
+  Misc Changes:
+    - Replaced concrete with refined concrete in a couple recipes
+  Removed Features:
+    - Removed random chunk turret recaching to improve performance
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.72
+Version: 1.016.72
 Date: Jan 30 2018
-	- Update to 0.16
-	- Fix more script errors in turret range and upgrades
-	- Added fire capsule
-	- Added sprayer equipment
-	- Added some new icon sprites
-	- Added sanity checks on modded turrets
-	- Removed laser beam mod compat and made beams native to mirror vanilla changes
-	- Added strong fire resist to power armor mk3
-	- Made power armor mk3 more expensive
-	- Improved range turret system to not make upgrades of technical entities
-	- Streamlined turret damage boost system to match vanilla
-	- Added acid turret
-	- Fixed spurious damage alerts for shield domes that are under attack but doing their job
+  Bugfixes:
+    - Fix more script errors in turret range and upgrades
+    - Fixed spurious damage alerts for shield domes that are under attack but doing their job
+  New Features:
+    - Added acid turret
+    - Added fire capsule
+    - Added sanity checks on modded turrets
+    - Added some new icon sprites
+    - Added sprayer equipment
+    - Added strong fire resist to power armor mk3
+  Misc Changes:
+    - Improved range turret system to not make upgrades of technical entities
+    - Made power armor mk3 more expensive
+    - Streamlined turret damage boost system to match vanilla
+    - Update to 0.16
+  Removed Features:
+    - Removed laser beam mod compat and made beams native to mirror vanilla changes
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.46
+Version: 1.015.46
 Date: Sep 3 2017
-	- Improved range turret scripting to fix some issues with leftover or incorrectly identified entities
-	- Added GFX quality option
-	- Fixed crated ammo being used as an intermediate recipe
-	- Domes now have tiered structure health
-	- Added turret logistics
-	- Fixed some potential script breakage with shockwave turret and domes
-	- "Space plasma" option now decreases space science cost of orbital destroyer
-	- Added more radiation resistances
-	- Significantly increased plasma turret power throughput and slightly increased buffer size
-	- Fixed particle overload and memory leak when killing mass quantities of biters with orbital strikes or shockwave turrets
-	- Orbital strikes now automatically chain if enemy structures or units continue to exist nearby
-	- Added new orbital strike VFX
-	- Added system to clean up alien tissue
-	- Added orbital scanner to reveal map area and allow firing orbital weaponry via the map
+  Bugfixes:
+    - Fixed crated ammo being used as an intermediate recipe
+    - Fixed particle overload and memory leak when killing mass quantities of biters with orbital strikes or shockwave turrets
+    - Fixed some potential script breakage with shockwave turret and domes
+    - Improved range turret scripting to fix some issues with leftover or incorrectly identified entities
+  New Features:
+    - Added GFX quality option
+    - Added more radiation resistances
+    - Added new orbital strike VFX
+    - Added orbital scanner to reveal map area and allow firing orbital weaponry via the map
+    - Added system to clean up alien tissue
+    - Added turret logistics
+    - Domes now have tiered structure health
+  Misc Changes:
+    - "Space plasma" option now decreases space science cost of orbital destroyer
+    - Orbital strikes now automatically chain if enemy structures or units continue to exist nearby
+    - Significantly increased plasma turret power throughput and slightly increased buffer size
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.32
-Game: 0.15
+Version: 1.015.32
 Date: Aug 18 2017
-	- Added shield domes
-	- Cannon turret now properly prioritizes spitters like it was always meant to
-	- Added defence trap
-	- Increased cannon turret range
-	- Added manual orbital targeting
+  New Features:
+    - Added defence trap
+    - Added manual orbital targeting
+    - Added shield domes
+  Rebalancing:
+    - Increased cannon turret range
+  Misc Changes:
+    - Cannon turret now properly prioritizes spitters like it was always meant to
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.20
-Game: 0.15
+Version: 1.015.20
 Date: Aug 6 2017
-	- Added shockwave turret
-	- Redesigned turret techs
-	- Fixed more issues with range turrets
-	- Added crated ammo unpacking
-	- Added orbital strike system, with automated orbital firing to clear the map of nests
+  Bugfixes:
+    - Fixed more issues with range turrets
+  New Features:
+    - Added crated ammo unpacking
+    - Added orbital strike system, with automated orbital firing to clear the map of nests
+    - Added shockwave turret
+  Misc Changes:
+    - Redesigned turret techs
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.5
-Game: 0.15
+Version: 1.015.5
 Date: Jul 25 2017
-	- Custom techs now have better effect description
-	- Added more radiation resistances to entities
-	- Added crated ammo
-	- Added several more options
-	- Plasma turrets now have custom sounds with laser beam turrets mod
-	- Tweaked some recipes and tech costs
-	- Settings now use locale
-	- Biter flesh now decomposes in inventories
-	- Fixed issues with range-boosted turrets
+  Bugfixes:
+    - Fixed issues with range-boosted turrets
+  New Features:
+    - Added crated ammo
+    - Added more radiation resistances to entities
+    - Added several more options
+    - Custom techs now have better effect description
+    - Plasma turrets now have custom sounds with laser beam turrets mod
+  Misc Changes:
+    - Biter flesh now decomposes in inventories
+    - Settings now use locale
+    - Tweaked some recipes and tech costs
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.0
-Game: 0.15
+Version: 1.015.0
 Date: Jul 14 2017
-	- Release
+  Misc Changes:
+    - Release
 ---------------------------------------------------------------------------------------------------
-Version: 0.0.8
-Game: 0.15
+Version: 0.015.8
 Date: Jul 2 2017
-	- Added turret range boost techs
-	- Added alien tissue drops
-	- Added configuration system with integration into the native mod settings menu and several config options to control things like progression gating and alien tissue behavior
-	- Removed T2 night vision equipment
+  New Features:
+    - Added alien tissue drops
+    - Added configuration system with integration into the native mod settings menu and several config options to control things like progression gating and alien tissue behavior
+    - Added turret range boost techs
+  Removed Features:
+    - Removed T2 night vision equipment
 ---------------------------------------------------------------------------------------------------
-Version: 0.0.5
-Game: 0.15
+Version: 0.015.5
 Date: Jun 20 2017
-	- Update to 0.15
-	- Added turret healing techs
-	- Plasma turrets now have compatibility with laser beam turret mod and a custom beam attack
-	- Removed nuke shell due to vanilla addition of atomic bomb
-	- Changed all use of uranium to be vanilla instead of UraniumPower
-	- Redesigned all tech costs to match 0.15 styling and science pack set
-	- Cannon turret now has a unique ammo item
-	- Added new turret sprites and icons
-	- Removed bullet upcrafting due to vanilla recipe changes
-	- Made concussion turrets cheaper and earlier game
-	- Added rocket versions of all custom cannon shells
-	- Rebalanced ammo damage
-	- Changed T2 night vision colors
-	- Reduced Mk3 power armor equipment grid size
+  New Features:
+    - Added new turret sprites and icons
+    - Added rocket versions of all custom cannon shells
+    - Added turret healing techs
+    - Plasma turrets now have compatibility with laser beam turret mod and a custom beam attack
+  Rebalancing:
+    - Rebalanced ammo damage
+    - Reduced Mk3 power armor equipment grid size
+  Misc Changes:
+    - Cannon turret now has a unique ammo item
+    - Changed T2 night vision colors
+    - Changed all use of uranium to be vanilla instead of UraniumPower
+    - Made concussion turrets cheaper and earlier game
+    - Redesigned all tech costs to match 0.15 styling and science pack set
+    - Update to 0.15
+  Removed Features:
+    - Removed bullet upcrafting due to vanilla recipe changes
+    - Removed nuke shell due to vanilla addition of atomic bomb
 ---------------------------------------------------------------------------------------------------
-Version: 0.0.4
-Game: 0.14
+Version: 0.014.4
 Date: Oct 28 2016
-	- Update to 0.14
-	- Added napalm shell
-	- Added acid capsule
-	- Mk3 power armor now comes with a 40 slot inventory bonus
-	- Added T2 flamethrower
-	- Added recipe to upcraft yellow ammo into red
-	- Plasma turrets now have custom sound
+  New Features:
+    - Added T2 flamethrower
+    - Added acid capsule
+    - Added napalm shell
+    - Added neutron bomb shell using UraniumPower materials
+    - Added radiation capsule
+    - Added recipe to upcraft yellow ammo into red
+    - Plasma turrets now have custom sound
+  Misc Changes:
+    - Mk3 power armor now comes with a 40 slot inventory bonus
+    - Update to 0.14
 ---------------------------------------------------------------------------------------------------
-Version: 0.0.4
-Game: 0.12
-Date: Dec 12 2015
-	- Added neutron bomb shell using UraniumPower materials
-	- Added radiation capsule
----------------------------------------------------------------------------------------------------
-Version: 0.0.3
-Game: 0.12
+Version: 0.012.3
 Date: Dec 4 2015
-	- Added power armor mk3 and better versions of night vision and laser defense equipment
-	- Added wide area scanner
+  New Features:
+    - Added power armor mk3 and better versions of night vision and laser defense equipment
+    - Added wide area scanner
 ---------------------------------------------------------------------------------------------------
-Version: 0.0.2
-Game: 0.12
+Version: 0.012.2
 Date: Nov 25 2015
-	- Added better walls
-	- Added self-defense technologies for power poles, radar, and robots to fight back if attacked
-	- Made trains heavier to improve biter penetration
-	- Added uranium (using UraniumPower materials) and sulfur ammo
-	- Added high explosive cannon shells
+  New Features:
+    - Added better walls
+    - Added high explosive cannon shells
+    - Added self-defense technologies for power poles, radar, and robots to fight back if attacked
+    - Added uranium (using UraniumPower materials) and sulfur ammo
+  Misc Changes:
+    - Made trains heavier to improve biter penetration
 ---------------------------------------------------------------------------------------------------
-Version: 0.0.1
-Game: 0.12
+Version: 0.012.1
 Date: Nov 21 2015
-	- Renamed to EndgameCombat
-	- Added Concussion Turret
-	- Added Plasma Turret
-	- Added Cannon Turret
----------------------------------------------------------------------------------------------------
-Version: 0.0.0
-Game: 0.11
-Date: Jun 8 2015
-	- **Creation** (as "BetterTank")
+  New Features:
+    - Added Cannon Turret
+    - Added Concussion Turret
+    - Added Plasma Turret
+  Misc Changes:
+    - Renamed to EndgameCombat
