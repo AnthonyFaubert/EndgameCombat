@@ -470,8 +470,7 @@ function cleanTissueNearPlayer(egcombat, player)
 	local drops = player.surface.find_entities_filtered{area={{player.position.x-r, player.position.y-r}, {player.position.x+r, player.position.y+r}}, type="item-entity"}
 	for _,item in pairs(drops) do
 		if item.stack and item.stack.valid_for_read and item.stack.name == "biter-flesh" and not (item.to_be_deconstructed(game.forces.player)) then
-			table.insert(egcombat.fleshToDeconstruct, {entity=item, time=game.tick+Config.deconstructFleshTimer*60}) --10s delay by default; 60*seconds
-			--item.order_deconstruction(game.forces.player)
+			item.order_deconstruction(game.forces.player)
 		end
 	end
 end
@@ -525,8 +524,7 @@ function doTissueDrops(egcombat, entity)
 					local drops = entity.surface.find_entities_filtered{area=box--[[position = pos--]], type="item-entity"}
 					for _,item in pairs(drops) do
 						if item.stack and item.stack.valid_for_read and item.stack.name == "biter-flesh" then
-							table.insert(egcombat.fleshToDeconstruct, {entity=item, time=droptime}) --10s delay by default; 60*seconds
-							--item.order_deconstruction(game.forces.player)
+							item.order_deconstruction(game.forces.player)
 						end
 					end
 				end

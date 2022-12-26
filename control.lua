@@ -16,6 +16,10 @@ require "tracker-hooks"
 require "__DragonIndustries__.arrays"
 
 function initGlobal(markDirty)
+	if global.egcombat.fleshToDeconstruct ~= nil then
+		-- this is obsolete, but potentially large. Clear it from the save if it exists
+		global.egcombat.fleshToDeconstruct = nil
+	end
 	if not global.egcombat then
 		global.egcombat = {}
 	end
@@ -331,19 +335,7 @@ script.on_event(defines.events.on_tick, function(event)
 	tickOrbitalStrikeSchedule(egcombat)
 	tickOrbitalScans(egcombat)
 	
-	if #egcombat.fleshToDeconstruct > 0 then
-		for i = #egcombat.fleshToDeconstruct,1,-1 do --iterate in reverse since removing entries
-			local entry = egcombat.fleshToDeconstruct[i]
-			local item = entry.entity ~= nil and entry.entity or entry[1]
-			local tick = entry.time ~= nil and entry.time or entry[2]
-			if event.tick >= tick or not item.valid then
-				if item.valid then
-					item.order_deconstruction(game.forces.player)
-				end
-				table.remove(egcombat.fleshToDeconstruct, i)
-			end
-		end
-	end
+	-- the egcombat.fleshToDeconstruct loop was taking most of the tick time (2688/2715)
 	
 	if Config.rottingFlesh and math.random() < 0.1 then
 		for _,player in pairs(game.players) do

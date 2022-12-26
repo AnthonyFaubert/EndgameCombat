@@ -5,6 +5,7 @@ Date: Dec 23 2022
     - Fixed turret ammo alert noises not being affected by Factorio's alert volume setting
   Misc Changes:
     - Changelog cleanup
+    - Alien tissue no longer periodically re-marks itself for deconstruction (performance improvement)
 ---------------------------------------------------------------------------------------------------
 Version: 1.101.152
 Date: Nov 15 2022
