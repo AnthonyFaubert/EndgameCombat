@@ -6,8 +6,6 @@ Config.spacePlasma = settings.startup["space-plasma"].value--[[@as boolean]]
 
 Config.spaceNukes = settings.startup["space-nukes"].value--[[@as boolean]]
 
-Config.deconstructFlesh = settings.startup["deconstruct-flesh"].value--[[@as boolean]]
-
 Config.bitersDropFlesh = settings.startup["flesh-unit-drops"].value--[[@as boolean]]
 
 Config.deconstructFleshTimer = settings.startup["deconstruct-flesh-timer"].value--[[@as number]]

@@ -19,12 +19,17 @@ data:extend({
         },
 		{
             type = "bool-setting",
-            name = "deconstruct-flesh",
-            setting_type = "startup",
+            name = "deconstruct-flesh-drops",
+            setting_type = "runtime-global",
             default_value = true,
             order = "r",
-			--localised_name = "Mark alien drops for deconstruction",
-			--localised_description = "Automatically marks drops from alien death for robot deconstruction after a configurable delay.",
+        },
+		{
+            type = "int-setting",
+            name = "deconstruct-flesh-player-radius",
+            setting_type = "runtime-per-user",
+            default_value = 32,
+            order = "r",
         },
 		{
             type = "bool-setting",

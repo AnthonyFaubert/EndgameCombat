@@ -16,11 +16,12 @@ require "tracker-hooks"
 require "__DragonIndustries__.arrays"
 
 function initGlobal(markDirty)
-	if global.egcombat.fleshToDeconstruct ~= nil then
-		-- this is obsolete, but potentially large. Clear it from the save if it exists
-		global.egcombat.fleshToDeconstruct = nil
-	end
-	if not global.egcombat then
+	if global.egcombat then
+		if global.egcombat.fleshToDeconstruct ~= nil then
+			-- this is obsolete, but potentially large. Clear it from the save if it exists
+			global.egcombat.fleshToDeconstruct = nil
+		end
+	else
 		global.egcombat = {}
 	end
 	if global.egcombat.placed_turrets == nil then
@@ -359,10 +360,19 @@ script.on_event(defines.events.on_tick, function(event)
 			end
 		end
 	end
-	
+
+	-- Mark alien tissue for deconstruction in a radius around the players
 	if #game.players > 0 and event.tick%60 == 0 then
 		local player = game.players[math.random(1, #game.players)]
-		cleanTissueNearPlayer(egcombat, player)
+		local r = settings.get_player_settings(player)["deconstruct-flesh-player-radius"].value
+		if r > 0 then
+			local drops = player.surface.find_entities_filtered{area={{player.position.x-r, player.position.y-r}, {player.position.x+r, player.position.y+r}}, type="item-entity"}
+			for _, item in pairs(drops) do
+				if item.stack and item.stack.valid_for_read and item.stack.name == "biter-flesh" and not (item.to_be_deconstructed(game.forces.player)) then
+					item.order_deconstruction(game.forces.player)
+				end
+			end
+		end
 	end
 end)
 

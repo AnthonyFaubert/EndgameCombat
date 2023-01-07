@@ -465,16 +465,6 @@ function getPositionForBPEntity(entity)
 	return result
 end
 
-function cleanTissueNearPlayer(egcombat, player)
-	local r = 32
-	local drops = player.surface.find_entities_filtered{area={{player.position.x-r, player.position.y-r}, {player.position.x+r, player.position.y+r}}, type="item-entity"}
-	for _,item in pairs(drops) do
-		if item.stack and item.stack.valid_for_read and item.stack.name == "biter-flesh" and not (item.to_be_deconstructed(game.forces.player)) then
-			item.order_deconstruction(game.forces.player)
-		end
-	end
-end
-
 function doTissueDrops(egcombat, entity)
 	local drops = 0
 	local range = 0
@@ -504,6 +494,7 @@ function doTissueDrops(egcombat, entity)
 		range = 0.75
 	end
 	--game.print("Attempting " .. drops .. " drops.")
+	local deconstructFleshDrops = settings.global["deconstruct-flesh-drops"].value
 	if drops > 0 then
 		local evo = game.forces.enemy.evolution_factor
 		local droptime = game.tick+Config.deconstructFleshTimer*60*(1+evo*3)
@@ -520,7 +511,7 @@ function doTissueDrops(egcombat, entity)
 			else
 				--game.print("Dropping drop @ " .. pos.x .. ", " .. pos.y)
 				entity.surface.spill_item_stack(pos, {name="biter-flesh"}, true) --does not return
-				if Config.deconstructFlesh then --mark for deconstruction? Will draw robots into attack waves and turret fire... -> make config
+				if deconstructFleshDrops then --mark for deconstruction? Will draw robots into attack waves and turret fire... -> make config
 					local drops = entity.surface.find_entities_filtered{area=box--[[position = pos--]], type="item-entity"}
 					for _,item in pairs(drops) do
 						if item.stack and item.stack.valid_for_read and item.stack.name == "biter-flesh" then
