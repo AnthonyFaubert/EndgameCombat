@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: Jan 7 2023
+  Misc Changes:
+    - Gave up on cooperating with Reika and changed the mod to LategameCombat
+---------------------------------------------------------------------------------------------------
 Version: 1.101.153
 Date: Dec 23 2022
   Bugfixes:

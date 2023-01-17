@@ -1,28 +1,10 @@
-# EndgameCombat
-Adds more powerful weaponry and defence designed for keeping on par with endgame or modded enemies.
------------------
-Primary Features:
-Concussion Turrets - More powerful versions of the gun turrets
-Plasma Turrets - More powerful versions of the laser turrets
-Cannon Turrets - Long range, slow firing turrets that prioritize spitters
-A more powerful tank with better armor and combat range
-Incendiary sulfur-based ammunition, in light and heavy (U238) variants
-More capsules for combat, including acid and radiation
-More tank and rocket ammunition, both for mid and end game (including Napalm and Nuclear variants)
-Long-range activity scanner
-More and stronger wall varieties
-A better flamethrower, with increased range and damage
-Better armor equipment
-Turret range upgrade research
-Turret regeneration research
-Logistic robot defenses research
-Power pole defenses research
-Adds crated ammo for giving ammo turrets longer time between reloads and a small DPS boost
-Adds shockwave turrets, which can attack all enemies in range simultaneously
-Orbital Bombardment technology and hardware, for automated destruction of biter nests, or manual airstrike capability
-Adds shield domes to protect large areas given sufficient energy
+My fork of [Reika's Endgame Combat](https://github.com/ReikaKalseki/EndgameCombat).
+Use at your own risk.
 
-Secondary Features:
-Better train penetration through hordes of biters
-Contains integration with the Laser Beam mod
-Biters, worms, and spawners drop Alien Tissue, which has some uses in production in research
+# Installation Instructions:
+1. [Download latest "afaubert" branch](https://github.com/AnthonyFaubert/EndgameCombat/archive/refs/heads/afaubert.zip)
+2. Extract the "EndgameCombat-afaubert" directory out of the zip file, put it in factorio/mods/, and rename it to "EndgameCombat".
+3. Restart Factorio.
+4. Profit.
+
+Made so that I can more easily distribute my custom performance improvements, QoL improvements, and bugfixes to my private server.
