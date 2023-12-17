@@ -1,3 +1,12 @@
+My fork of [Reika's Endgame Combat](https://github.com/ReikaKalseki/EndgameCombat).
+Use at your own risk.
+
+# Installation Instructions:
+1. [Download latest "afaubert" branch](https://github.com/AnthonyFaubert/EndgameCombat/archive/refs/heads/afaubert.zip)
+2. Extract the "EndgameCombat-afaubert" directory out of the zip file, put it in factorio/mods/, and rename it to "EndgameCombat".
+3. Restart Factorio.
+4. Profit.
+
 # EndgameCombat
 Adds more powerful weaponry and defence designed for keeping on par with endgame or modded enemies.
 -----------------

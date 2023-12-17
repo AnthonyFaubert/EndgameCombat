@@ -580,7 +580,7 @@ end
 function removeShockwaveTurret(egcombat, entity)
 	if string.find(entity.name, "shockwave-turret", 1, true) and egcombat.shockwave_turrets[entity.force.name] then
 		for i, entry in ipairs(egcombat.shockwave_turrets[entity.force.name]) do
-			if entry.turret.position.x == entity.position.x and entry.turret.position.y == entity.position.y then
+			if (entry.turret == nil) or (entry.turret.position.x == entity.position.x and entry.turret.position.y == entity.position.y) then
 				table.remove(egcombat.shockwave_turrets[entity.force.name], i)
 				break
 			end
@@ -661,8 +661,10 @@ function checkAndCacheTurret(egcombat, turret, force)
 		if egcombat.shockwave_turrets[force.name] == nil then
 			egcombat.shockwave_turrets[force.name] = {}
 		end
-		table.insert(egcombat.shockwave_turrets[force.name], {turret=turret, delay=60})
-		--game.print("Shockwave turret @ " .. turret.position.x .. ", " .. turret.position.y)
+		if turret ~= nil then
+			table.insert(egcombat.shockwave_turrets[force.name], {turret=turret, delay=60})
+			--game.print("Shockwave turret @ " .. turret.position.x .. ", " .. turret.position.y)
+		end
 	end
 	
 	if string.find(turret.name, "cannon-turret", 1, true) then
@@ -821,16 +823,6 @@ function trackNewTurret(egcombat, turret)
 		track_turret(egcombat.placed_turrets[force.name], turret)
 	
 		checkAndCacheTurret(egcombat, turret, force)
-		--[[
-		if string.find(turret.name, "shockwave-turret", 1, true) then
-			if egcombat.shockwave_turrets[force.name] == nil then
-				egcombat.shockwave_turrets[force.name] = {}
-			end
-			table.insert(egcombat.shockwave_turrets[force.name], {turret=turret, delay=60})
-			--game.print("Shockwave turret @ " .. turret.position.x .. ", " .. turret.position.y)
-		end
-		--]]
-
 		--game.print("Adding " .. turret.name .. " ID " .. turret.unit_number .. " @ " .. turret.position.x .. ", " .. turret.position.y .. " for force " .. force.name .. " to turret table")
 	end
 	
